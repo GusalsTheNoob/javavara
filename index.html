@@ -1,0 +1,520 @@
+<html>
+<head>
+    <title>JAVAVARA</title>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <meta property="og:type" content="website">
+    <meta property="og:title" content="나자바바라">
+    <meta property="og:url" content="http://javavara.snu.ac.kr/">
+    <meta property="og:description" content="불꽃반 코딩 소모임 나자바바라">
+    <meta property="og:image" content="http://javavara.snu.ac.kr/images/logo/logo_800400.png">
+    <link rel="stylesheet" href="css/jvr_base.css">
+    <link rel="stylesheet" href="css/jvr_index.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+    <link rel="icon" type="image/png"  href="images/favicon.png">
+    
+</head>
+<body>
+    <!--Navbar (sit on top)-->
+    <div class="jvr-top">
+        <div class="jvr-bar jvr-white jvr-card" id="myNavbar">
+        <a href="#home" class="jvr-bar-item jvr-button jvr-wide jvr-hide-small" style="font-size:larger">
+        나자바바라
+        </a>
+        <a href="#home" class="jvr-bar-item jvr-button jvr-wide jvr-hide-medium jvr-hide-large">
+          나자바바라
+        </a>
+        <!-- Right-sided navbar links -->
+        <div class="jvr-right jvr-hide-small">
+            <a href="#about" class="jvr-bar-item jvr-button" style="height:48px">About</a>
+            <a href="#team" class="jvr-bar-item jvr-button" style="height:48px"><i class="fa fa-user"></i> Team</a>
+            <a href="#project" class="jvr-bar-item jvr-button" style="height:48px"><i class="fa fa-th"></i> Project</a>
+            <a href="#course" class="jvr-bar-item jvr-button" style="height:48px"><i class="fa fa-pencil" style="font-size: larger;"></i> Course</a>
+            <a href="#news" class="jvr-bar-item jvr-button" style="height:48px"><i class="fa fa-newspaper-o"></i> News</a>
+            <a href="#contact" class="jvr-bar-item jvr-button" style="height:48px"><i class="fa fa-envelope"></i> Contact</a>
+        </div>
+        <!--Hide right-floated links on small screens and replace them with a menu icon-->
+        <a href="javascript:void(0)" class="jvr-bar-item jvr-button jvr-right jvr-hide-medium jvr-hide-large" style="height:43px" onclick="jvr_open()">
+        <i class="fa fa-bars" style="padding-top: 5px;"></i>
+        </a>
+        </div>
+    </div>
+    <!--Sidebar on small screens when clicking the menu icon-->
+    <nav class="jvr-sidebar jvr-bar-block jvr-black jvr-card jvr-animate-left jvr-hide-medium jvr-hide-large" style="display:none" id="mySidebar">
+        <a href="javascript:void(0)" onclick="jvr_close()" class="jvr-bar-item jvr-button jvr-large jvr-padding-16">Close ×</a>
+        <a href="#about" onclick="jvr_close()" class="jvr-bar-item jvr-button">About</a>
+        <a href="#team" onclick="jvr_close()" class="jvr-bar-item jvr-button">Team</a>
+        <a href="#project" onclick="jvr_close()" class="jvr-bar-item jvr-button">Project</a>
+        <a href="#course" onclick="jvr_close()" class="jvr-bar-item jvr-button">Course</a>
+        <a href="#news" onclick="jvr_close()" class="jvr-bar-item jvr-button">News</a>
+        <a href="#contact" onclick="jvr_close()" class="jvr-bar-item jvr-button">Contact</a>
+    </nav>
+    <!-- Header with full-height image -->
+    <header class="bgimg-1 jvr-display-container jvr-grayscale-min" id="home">
+        <div class="jvr-display-right jvr-text-white" style="padding: 40px 48px 48px 48px;">
+          <span class="jvr-jumbo jvr-hide-small">나자바바라에 오신 것을 환영합니다!</span><br><br>
+          <span class="jvr-large jvr-hide-small" style="display: inline-block; width: 100%; text-align:right;">코딩과 코딩이 여는 가능성을 함께 배웁니다.</span>
+          <p class="jvr-hide-small"><a href="#about" class="jvr-button jvr-white jvr-padding-large jvr-large jvr-margin-top jvr-opacity jvr-hover-opacity-off" style="position: absolute; right:48px;">Learn more</a></p>
+          <span class="jvr-xxlarge jvr-hide-large jvr-hide-medium">나자바바라에 오신 것을 환영합니다!</span><br><br>
+          <span class="jvr-large jvr-hide-large jvr-hide-medium">while(!(succeed = try())); </span>
+          <p class="jvr-hide-large jvr-hide-medium"><a href="#about" class="jvr-button jvr-white jvr-padding-large jvr-large jvr-margin-top jvr-opacity jvr-hover-opacity-off" style="position: relative;">Learn more</a></p>
+          
+        </div> 
+        <div class="jvr-display-bottomleft jvr-text-grey jvr-large" style="padding:24px 48px">
+          <i class="fa fa-facebook-official jvr-hover-opacity"></i>
+          <i class="fa fa-instagram jvr-hover-opacity"></i>
+          <i class="fa fa-snapchat jvr-hover-opacity"></i>
+          <i class="fa fa-pinterest-p jvr-hover-opacity"></i>
+          <i class="fa fa-twitter jvr-hover-opacity"></i>
+          <i class="fa fa-linkedin jvr-hover-opacity"></i>
+        </div>
+    </header>
+    <!--About Section-->
+    <div class="jvr-container" style="padding:128px 56px" id="about">
+        <h3 class="jvr-center">About JAVAVARA</h3>
+        <p style="text-align: left;">
+          <strong>나자바바라(Javavara)</strong>는 2019년 초 웹 개발 공부를 목적으로 창설된 서울대 경제학부 불꽃반 소모임입니다. <br>
+          <strong>1대 자바바라장 최승우</strong>는 창업을 목적으로 웹 개발을 공부하였고, 이를 바탕으로 소모임을 창설하였습니다.
+          소모임의 이름인 ‘나자바바라’는 초기 멤버였던 이승학이 javascript에 영감을 받아 지어주었습니다. 2019년 1학기에 웹 개발의 3대 도구인 html, css, javascript를 배우고 여름방학에는 반응형 웹 디자인을 익혔습니다. <br>
+          또한 1대 회장님이 국방의 의무를 수행하러 떠나고  <strong>오수민이 2대 회장</strong>에 취임했습니다. 9월에 웹 개발 공부를 마치고 나자바바라 웹사이트를 만들기 위하여 메인 페이지와 로고를 디자인했습니다.
+          11월에 신입부원 오소윤, 이호성, 조민제가 합류했고 이들도 2020년 2월까지 html, css를 배우고 있습니다. 겨울방학에 김예진 부원이 새로 들어왔고 본격적으로 웹 페이지 디자인을 시작해서 각자의 웹페이지를 완성했습니다.
+          2대 회장 오수민 학우는 나자바바라의 영역을 넓혀, 컴퓨터 과학 전반에 관해 공부하는 소모임으로 모임의 성격을 확장하였습니다.<br>
+          <strong>3대 회장 김현민</strong>은 코딩 전반과 코딩 활용에 대한 불꽃반 학우들의 커져가는 관심에 부응하기 위한 자바바라의 새로운 도전을 이어받아, 코딩의 기본인 Python의 기초를 닦고 데이터 과학, 머신러닝, 웹 크롤링 등 다양한 응용분야에 대한 커리큘럼을 기획하고 있습니다.
+        </p>
+      </div>
+      <!--Extra Section "협력과 배움"-->
+      <div class="jvr-container jvr-light-grey" style="padding:128px 16px">
+        <div class="jvr-row-padding">
+          <div class="jvr-half">
+            <h3>협력과 배움</h3>
+            <p>나자바바라에서는 선배 부원이 신입 부원에게 지식을 전수해줍니다.<br> 
+              최승우 회장이 초기 멤버에게, 초기 멤버가 2학기에 들어온 신입 부원들에게 웹 개발의 기초를 가르쳤습니다. <br>
+              그리고 함께 모여 프로젝트를 진행 중입니다. <br>
+              앞으로는 보다 수평적으로, 서로 프로그래밍을 가르쳐주고 배우는 방향으로 나아갈 것입니다.</p>
+            <p><a href="#project" class="jvr-button jvr-black"><i class="fa fa-th">&nbsp;</i> View Our Project</a></p>
+          </div>
+          <div class="jvr-half">
+            <img class="jvr-image" src="images/cooperation.jpg" alt="team_meating" width="700" height="394" style="border-radius:8px">
+          </div>
+        </div>
+      </div>
+      <!--Team Section-->
+      <!--반응형 마무리 살짝 미흡함 min-width-->
+      <div class="jvr-container" style="padding:128px 16px" id="team">
+        <h3 class="jvr-center">The Team</h3>
+        <p class="jvr-center jvr-large">자바바라의 구성원을 소개합니다</p>
+        <div class="jvr-row-padding" style="margin-top:64px">
+            <div class="jvr-col l3 m6 jvr-margin-bottom">
+                    <figure class="member">
+                        <img src="images/member/승우.jpg" alt="seungwoo"/>
+                        <figcaption>
+                        <h3>승우</h3>
+                        <p class="jvr-opacity">나자바바라 1대 회장</p>
+                        <p>돈 벌 궁리 하느라 가난해진 창업가</p>
+                        <a href="https://www.facebook.com/profile.php?id=100014444172561"  target="_blank" class="read-more">Read More</a>
+                        </figcaption>
+                    </figure>
+                </div>
+            <div class="jvr-col l3 m6 jvr-margin-bottom">
+                <figure class="member">
+                    <img src="images/member/수민.jpg" alt="Sumin"/>
+                    <figcaption>
+                    <h3>수민</h3>
+                    <p class="jvr-opacity">나자바바라 2대 회장</p>
+                    <p>컴퓨터 과학에 관심이 많은 경제학부 학생<br>
+                      컴퓨터와 친구가 되고 싶다
+                    </p>
+                    <a href="./sumin"  target="_blank"  class="read-more">Read More</a>
+                    </figcaption>
+                </figure>
+            </div>
+            <div class="jvr-col l3 m6 jvr-margin-bottom">
+                <figure class="member">
+                    <img src="images/member/서연.jpg" alt="Seoyeon"/>
+                    <figcaption>
+                    <h3>서연</h3>
+                    <p class="jvr-opacity">Designer</p>
+                    <p>Phasellus eget enim eu lectus faucibus vestibulum. Suspendisse sodales pellentesque elementum.</p>
+                    <a href="" class="read-more">Read More</a>
+                    </figcaption>
+                </figure>
+            </div>
+            <div class="jvr-col l3 m6 jvr-margin-bottom">
+                <figure class="member">
+                    <img src="images/member/윤제.jpg" alt="Yoonje"/>
+                    <figcaption>
+                    <h3>윤제</h3>
+                    <p class="jvr-opacity">취미로 웹개발을 하는 농구선수</p>
+                    <p>구 불꽃도비이자 농구쟁이<br>
+                      지금은 도깨비나 보고있는 게으른 자바바라 부원이죠:)<br>
+                      다른건 잘 모르겠군요! 차차 찾아봐야죠.</p>
+                    <a href="http://yoonje1007.dothome.co.kr/"  target="_blank" class="read-more">Read More</a>
+                    </figcaption>
+                </figure>
+            </div>
+            <div class="jvr-col l3 m6 jvr-margin-bottom">
+                <figure class="member">
+                    <img src="images/member/현민.jpg" alt="Sumin"/>
+                    <figcaption>
+                    <h3>현민</h3>
+                    <p class="jvr-opacity">Data Scientist</p>
+                    <p>Phasellus eget enim eu lectus faucibus vestibulum. Suspendisse sodales pellentesque elementum.</p>
+                    <a href="http://harrygusals.dothome.co.kr/" target="_blank" class="read-more">Read More</a>
+                    </figcaption>
+                </figure>
+            </div>
+            <div class="jvr-col l3 m6 jvr-margin-bottom">
+                <figure class="member">
+                    <img src="images/member/소윤.jpg" alt="soyoon"/>
+                    <figcaption>
+                    <h3>소윤</h3>
+                    <p class="jvr-opacity">담장이</p>
+                    <p>Phasellus eget enim eu lectus faucibus vestibulum. Suspendisse sodales pellentesque elementum.</p>
+                    <a href="http://osy181231.dothome.co.kr/" target="_blank" class="read-more">Read More</a>
+                    </figcaption>
+                </figure>
+            </div>
+            <div class="jvr-col l3 m6 jvr-margin-bottom">
+                <figure class="member">
+                    <img src="images/member/호성.jpg" alt="Sumin"/>
+                    <figcaption>
+                    <h3>호성</h3>
+                    <p class="jvr-opacity">자바바라의 그림쟁이, 불꽃반의 멋쟁이</p>
+                    <p>Phasellus eget enim eu lectus faucibus vestibulum. Suspendisse sodales pellentesque elementum.</p>
+                    <a href="http://hs619619.dothome.co.kr/practice/home.html" target="_blank" class="read-more">Read More</a>
+                    </figcaption>
+                </figure>
+            </div>
+            <div class="jvr-col l3 m6 jvr-margin-bottom">
+                <figure class="member">
+                    <img src="images/member/민제.jpg" alt="Sumin"/>
+                    <figcaption>
+                    <h3>민제</h3>
+                    <p class="jvr-opacity">고든 바람처럼 빨라요 (from 토마스와 친구들)</p>
+                    <p>현 불꽃도비<br>
+                      코로나바이러스 덕에 할 일이 미뤄졌어요. 친구도 좋지만 혼자서도 잘 놀아요. 프로그래밍은 고등학교 수업 이후로 처음이라 아직 쌩초보에요.</p>
+                    <a href="http://minje55.dothome.co.kr" target="_blank" class="read-more">Read More</a>
+                    </figcaption>
+                </figure>
+            </div>
+            <div class="jvr-col l3 m6 jvr-margin-bottom">
+                <figure class="member">
+                    <img src="images/member/예진.jpg" alt="Sumin"/>
+                    <figcaption>
+                    <h3>예진</h3>
+                    <p class="jvr-opacity">여새짱. 인싸죠.</p>
+                    <p>Phasellus eget enim eu lectus faucibus vestibulum. Suspendisse sodales pellentesque elementum.</p>
+                    <a href="http://kyj1153.dothome.co.kr" target="_blank" class="read-more">Read More</a>
+                    </figcaption>
+                </figure>
+            </div>
+        </div>
+      </div>
+      <!--Extra Section "History"-->
+      <!--내가 원래 메인으로 쓰려고 했던 컴퓨터 발전 그림도 같이 달면 좋겠다!(Sumin)-->
+      <div class="jvr-container jvr-row jvr-center jvr-dark-grey jvr-padding-64">
+        <div class="jvr-quarter">
+          <span class="jvr-xxlarge">2019</span>
+          <br>나자바바라 탄생<br>Web Development
+        </div>
+        <div class="jvr-quarter">
+          <span class="jvr-xxlarge">2020</span>
+          <br>Computer Science
+          <br>Python
+          <br>Data Science
+        </div>
+        <div class="jvr-quarter">
+          <span class="jvr-xxlarge">2021</span>
+          <br>Big Data
+          <br>Machine Learning / AI
+        </div>
+        <div class="jvr-quarter">
+          <span class="jvr-xxlarge">2022</span>
+          <br>?
+        </div>
+      </div>
+      <!--Project Section-->
+      <div class="jvr-container" style="padding:128px 16px" id="project">
+        <h3 class="jvr-center">Our Project</h3>
+        <p class="jvr-center jvr-large">
+          "백견(見)이 불여일타(打)"<br>
+        나자바바라에서는 프로젝트에 도전하여 배운 내용을 활용합니다</p>
+      
+        <div class="jvr-row-padding" style="margin-top:64px">
+          <div class="jvr-col l3 m6">
+            <img src="./images/javavara_main_project.PNG" style="width:100%" onclick="onClick(this)" class="jvr-hover-opacity" alt="Javavara 메인 페이지. 2대 회장 오수민의 공로가 매우 크다.">
+          </div>
+          <div class="jvr-col l3 m6">
+            <img src="./images/personal_page_project1.PNG" style="width:100%" onclick="onClick(this)" class="jvr-hover-opacity" alt="팀원들이 각자 만든 페이지 1. 이윤제 소유. 도메인 네임이 재치있다.">
+          </div>
+          <div class="jvr-col l3 m6">
+            <img src="./images/personal_page_project2.PNG" style="width:100%" onclick="onClick(this)" class="jvr-hover-opacity" alt="팀원들이 각자 만든 페이지 2. 오소윤 소유. 캐치프레이즈가 인상적이다.">
+          </div>
+          <div class="jvr-col l3 m6">
+            <img src="./images/personal_page_project3.PNG" style="width:100%" onclick="onClick(this)" class="jvr-hover-opacity" alt="팀원들이 각자 만든 페이지 3. 이호성 소유. 직접 만든 일러스트로 GIF를 만들었다!">
+          </div>
+        </div>
+      
+        <div class="jvr-row-padding jvr-section">
+          <div class="jvr-col l3 m6">
+            <img src="./images/personal_page_project4.PNG" style="width:100%" onclick="onClick(this)" class="jvr-hover-opacity" alt="팀원들이 각자 만든 페이지 4. 조민제 소유. 민제의 삶에 대한 많은 이야기가 있어서 읽는 재미가 있다.">
+          </div>
+          <div class="jvr-col l3 m6">
+            <img src="./images/personal_page_project5.PNG" style="width:100%" onclick="onClick(this)" class="jvr-hover-opacity" alt="팀원들이 각자 만든 페이지 5. 김예진 소유. 심플하지만 강렬한 철학이 담겨 있다.">
+          </div>
+          <div class="jvr-col l3 m6">
+            <img src="./images/personal_page_project.PNG" style="width:100%" onclick="onClick(this)" class="jvr-hover-opacity" alt="팀원들이 각자 만든 페이지 6. 김현민 소유. 역시나 고양이가 빠지지 않는다.">
+          </div>
+          <div class="jvr-col l3 m6">
+            <img src="https://www.w3schools.com/w3images/tech_tableturner.jpg" style="width:100%" onclick="onClick(this)" class="jvr-hover-opacity" alt="Coming soon">
+          </div>
+        </div>
+      </div>
+      <!--Modal for full size images on click-->
+      <div id="modal01" class="jvr-modal jvr-black" onclick="this.style.display='none'">
+        <span class="jvr-button jvr-xxlarge jvr-black jvr-padding-large jvr-display-topright" title="Close Modal Image">×</span>
+        <div class="jvr-modal-content jvr-animate-zoom jvr-center jvr-transparent jvr-padding-64">
+          <img id="img01" class="jvr-image">
+          <p id="caption" class="jvr-opacity jvr-large"></p>
+        </div>
+      </div>
+     
+      <!--Course Section-->
+      <div class="jvr-container jvr-center jvr-dark-grey" style="padding:128px 16px" id="course">
+        <h3>Course</h3>
+        <p class="jvr-large">나자바바라에서 진행한 수업 혹은 진행할 계획인 수업입니다
+            
+        </p>
+        <div class="jvr-row-padding" style="margin-top:64px">
+          <div class="subject jvr-third jvr-section" 
+          onmouseover="$(this).find('.subject-name').addClass('jvr-burgundy jvr-padding-48')"
+          onmouseout="$(this).find('.subject-name').removeClass('jvr-burgundy jvr-padding-48')">
+            <ul class="jvr-ul jvr-white jvr-hover-shadow" >
+              <li class="subject-name jvr-black jvr-xlarge jvr-padding-32 ">Web</li>
+              <li class="jvr-padding-16"><b>개요</b><br> 웹사이트 제작하는 방법을 배웁니다 <br> 기본 과목: html, css, javascript<br>
+              심화과목: AngularJS, SQL 등</li>
+              <li class="jvr-padding-16"><b>선수과목</b><br> (기본 과목 기준) 선수과목은 없지만 인내심이 필요합니다  </li>
+              <li class="jvr-padding-16"><b>난이도</b><br> (기본 과목 기준) ★ ☆ ☆ ☆ ☆ </li>
+              <li class="jvr-padding-16"><b>예상소요기간</b><br> (기본 과목 기준) 3개월 </li>
+              <li class="jvr-light-grey jvr-padding-24">
+                <button class="jvr-button jvr-black jvr-padding-large" onClick="window.open('https://classroom.google.com/u/0/c/NDcyNDc1MTg1MTda')">Classroom</button>
+              </li>
+            </ul>
+          </div>
+          <div class="subject jvr-third jvr-section"
+          onmouseover="$(this).find('.subject-name').addClass('jvr-burgundy jvr-padding-48')"
+          onmouseout="$(this).find('.subject-name').removeClass('jvr-burgundy jvr-padding-48')">
+            <ul class="jvr-ul jvr-white jvr-hover-shadow">
+              <li class="subject-name jvr-black jvr-xlarge jvr-padding-32">Computer Science</li>
+              <li class="jvr-padding-16"><b>개요</b><br> 컴퓨터에 관한 기초적이고 이론적인 내용을 배웁니다 <br> 
+                Data representation, Communication and Internet technologies, Hardware and software, Security, Ethics</li>
+              <li class="jvr-padding-16"><b>선수과목</b><br> 컴퓨터를 자주 사용해본 경험 </li>
+              <li class="jvr-padding-16"><b>난이도</b><br> ★ ☆ ☆ ☆ ☆ <br>나자바바라에서는 기초적인 내용만 다룰 것이므로 난이도는 낮습니다</li>
+              <li class="jvr-padding-16"><b>예상소요기간</b><br> 2개월 </li>
+              <li class="jvr-light-grey jvr-padding-24">
+                <button class="jvr-button jvr-black jvr-padding-large">Classroom</button>
+              </li>
+            </ul>
+          </div>
+          <div class="subject jvr-third jvr-section"
+          onmouseover="$(this).find('.subject-name').addClass('jvr-burgundy jvr-padding-48')"
+          onmouseout="$(this).find('.subject-name').removeClass('jvr-burgundy jvr-padding-48')">
+            <ul class="jvr-ul jvr-white jvr-hover-shadow">
+              <li class="subject-name jvr-black jvr-xlarge jvr-padding-32">Python &nbsp;<span style="background-color: red; font-size: 15px;">모집중!</span></li>
+              <li class="jvr-padding-16"><b>개요</b><br> 인터프리터 언어이자 범용적인 고급 프로그래밍 언어인 Python을 배웁니다</li>
+              <li class="jvr-padding-16"><b>선수과목</b><br> 프로그래밍 경험이 있다면 좋지만, 없어도 무방합니다. 파이썬은 많은 사람들의 첫 프로그래밍 언어입니다</li>
+              <li class="jvr-padding-16"><b>난이도</b><br> ★ ★ ☆ ☆ ☆</li>
+              <li class="jvr-padding-16"><b>예상소요기간</b><br> 프로그래밍 경험이 있다면 배우는 데 일주일도 안 걸릴 수 있지만, 파이썬을 이용해 어떤 일을 하고 싶은가에 따라 학습에 필요한 기간이 상이합니다</li>
+              <li class="jvr-light-grey jvr-padding-24">
+                <button class="jvr-button jvr-black jvr-padding-large" onClick="window.open('https://www.notion.so/Python-Classroom-Home-958d1dbe1bd9428682135145cbb49b4d')">Classroom</button>
+              </li>
+            </ul>
+          </div>
+        </div>
+        <button class="jvr-button jvr-white jvr-padding-large">More</button>
+        <!--버튼 link 연결하기-->
+      </div>
+
+    <!--Gallery & News
+    이쪽은 좀 더 편하게 contents를 보여주려면 code 수정이 좀 필요하겠다. (Sumin)
+    배경으로 관정사진이 필요하면 강민수 오빠한테 물어보기 (Sumin) -->
+    <div class="jvr-container jvr-padding-64" id="news">
+        <div class="jvr-row-padding">
+            <!--images-->
+            <div class="jvr-half">
+                <h3>News</h3>
+                <br>
+                <div class="slideshow-container">
+                    <div class="mySlides fade">
+                        <div class="numbertext"> 1 / 6</div>
+                        <img src="images/bigbang.jpg" style="width:100%">
+                    </div>
+
+                    <div class="mySlides fade">
+                        <div class="numbertext"> 2 / 6</div>
+                        <img src="images/main_on_whiteboard.jpg" style="width:100%">
+                    </div>
+
+                    <div class="mySlides fade">
+                        <div class="numbertext"> 3 / 6</div>
+                        <img src="images/hyunmin_main.jpg"
+                        style="width:100%">
+                    </div>
+
+                    <div class="mySlides fade">
+                        <div class="numbertext"> 4 / 6</div>
+                        <img src="images/menu.png"
+                        style="width:100%">
+                    </div>
+
+                    <div class="mySlides fade">
+                        <div class="numbertext"> 5 / 6</div>
+                        <img src="images/seoyoen_4ppl.jpg"
+                        style="width:100%">
+                    </div>
+
+                    <div class="mySlides fade">
+                        <div class="numbertext"> 6 / 6</div>
+                        <img src="images/fish-shaped buns.jpg"
+                        style="width:100%">
+                    </div>
+
+                    <a class="prev" onclick="plusSlides(-1)">  &#10094;
+                    </a>
+                    <a class="next" onclick="plusSlides(1)"> &#10095;
+                    </a>
+                </div>
+                <br>
+                <div style="text-align:center">
+                    <span class="dot" onclick="currentSlide(1)"></span> 
+                    <span class="dot" onclick="currentSlide(2)"></span> 
+                    <span class="dot" onclick="currentSlide(3)"></span>
+                    <span class="dot" onclick="currentSlide(4)"></span>
+                    <span class="dot" onclick="currentSlide(5)"></span>
+                    <span class="dot" onclick="currentSlide(6)"></span>
+                </div>
+            </div>
+                <!--articles-->
+			<div class="jvr-half" style="padding: 28px 44px 24px 24px;">
+				<div class="article-container">
+					<br>
+					<div class="myArticles fade">
+						<p><br><br>
+              &#60;나자바바라 빅뱅&#62;<br>
+              만든 사람: 서연<br>
+              만든 날짜: 2019년 10월 11일
+              
+              <br><br>신입생 모집과 웹 사이트 제작 프로젝트를 앞둔 자바바라의 포부를 보여주는 작품이다.<br>
+              앞으로도 이 포부를 잊지 말고 꾸준하고 집요한 프로그래머 정신으로 운영되는 나자바바라가 되었으면 한다.
+						</p>
+					</div>
+					<div class="myArticles fade">
+						<p><br><br>
+              &#60;나자바바라 페이지 디자인하던 날&#62;<br>
+              날짜: 2019년 9월 23일
+              
+              <br><br>수민, 서연, 윤제, 현민 넷이 관정도서관 스터디룸에 모여 나자바바라 페이지를 어떻게 만들것인지 논의하였다. 글씨체, 색깔, 캐릭터, 로고 등 다양한 이야기가 오고 갔다.<br>
+              지금 보고 있는 이 웹 사이트는 이때부터 본격적으로 만들어진 것이다.
+							</p>
+					</div>
+					<div class="myArticles fade">
+						<p><br><br>
+              &#60;나자바바라 페이지 디자인 아이디어&#62;<br>
+              만든 사람: 현민<br>
+              만든 날짜: 2019년 9월 23일
+    
+              <br><br>
+              나자바바라 메인 페이지를 어떻게 만들지 회의를 하던 중 현민이가 제안한 페이지다.<br>
+              대칭과 반복의 미를 느낄 수 있는 작품이다.<br>
+              또한 나자바바라에 대한 현민이의 애정도 느껴지는 작품이다.
+						</p>
+						
+					</div>
+					<div class="myArticles fade">
+            <p><br><br>	&#60;나자바바라 사이트 메뉴 구상&#62;<br>
+              만든 날짜: 2019년 9월 23일
+              
+              <br><br>본격적인 코딩 작업에 들어가기 전에 부원들과 함께 메뉴를 구상했다.<br>
+              이때 구상했던 메뉴는 웹 사이트 제작 과정에서 수정을 거쳐 지금의 메뉴가 되었다.
+						</p>
+					</div>
+					<div class="myArticles fade">
+            <p><br><br>
+              &#60;개성과 웃음이 넘치는 나자바바라!&#62;<br>
+              만든 사람: 서연<br>
+              만든 날짜: 2019년 10월 4일
+              
+              <br><br>나자바바라 구성원의 특색을 잘 살린 작품이다.<br>
+              서연이의 샘솟는 아이디어와 빠른 작업 속도는 나자바바라에 항상 큰 힘이 되었다.
+						</p>
+					</div>
+					<div class="myArticles fade">
+						<p><br><br>
+              &#60;신입 부원 OT 와 환영회&#62;<br>
+              날짜: 2019년 11월 4일<br><br> 	
+              
+              나자바바라 신입 부원을 뽑고 OT와 환영회를 했다.
+              OT에서는 앞으로 나바라라에서 무엇을 할 것인지 안내하였고, web에 관한
+              기본적인 지식을 전달하였다.<br>
+              OT가 끝나고 황금마차에 환영회를 하러 가는 길에 다 같이 붕어빵을 먹었다. <br>신입 부원들은 이 날부터 지금까지 나자바바라에서 열심히 활동하고 있다.
+						</p>
+						</p>
+					</div>
+				</div>
+			</div>
+		</div>
+	</div>
+
+
+      <!--Contact Section -->
+      <div class="jvr-container jvr-light-grey" style="padding:128px 16px" id="contact">
+        <h3 class="jvr-center">Contact</h3>
+        <p class="jvr-center jvr-large">자바바라와 소통을 해요</p>
+        <div style="margin-top:48px">
+          <p><i class="fa fa-map-marker fa-fw jvr-xxlarge jvr-margin-right"></i> 서울특별시 관악로 관악구1 16동 211호 (불꽃반 반방) </p>
+          <p><i class="fa fa-phone fa-fw jvr-xxlarge jvr-margin-right"></i> Phone: 02-880-0000</p>
+          <p><i class="fa fa-envelope fa-fw jvr-xxlarge jvr-margin-right"> </i> Email: snujavavara@gmail.com</p>
+          <br>
+          <form action="https://formspree.io/snujavavara@gmail.com" method="POST" target="_blank">
+            <p><input class="jvr-input jvr-border" type="text" placeholder="Purpose" required="" name="Purpose" list="purposes"></p>
+            <datalist id="purposes">
+                <option value="신입부원 지원"></option>
+                <option value="질문"></option>
+                <option value="건의 사항"></option>
+                <option value="기타"></option>
+            </datalist>
+            <p><input class="jvr-input jvr-border" type="text" placeholder="Name" required="" name="Name"></p>
+            <p><input class="jvr-input jvr-border" type="text" placeholder="Email" required="" name="Email"></p>
+            <p><input class="jvr-input jvr-border" type="text" placeholder="Subject" required="" name="Subject"></p>
+            <p><textarea class="jvr-input jvr-border"  placeholder="Message" required="" name="Message"></textarea></p>
+            <p>
+              <button class="jvr-button jvr-black" type="submit">
+                <i class="fa fa-paper-plane"></i> Send Message
+              </button>
+            </p>
+          </form>
+          <!--Logo Image-->
+          <!--로고 이미지 반응형 손보기-->
+          <img src="images/logo/logo.png" class="jvr-image" id="logo" style= "display: block; margin: 0px auto; margin-top:48px">
+        </div>
+      </div>
+      <!--Footer-->
+      <footer class="jvr-center jvr-black jvr-padding-64"> 
+		<!--나중에 SNS만들면 넣는 게 더 나을 것 같기도 하지만 일단 넣어둠(Sumin)-->
+		<div class="jvr-xlarge jvr-section">
+          <i class="fa fa-facebook-official jvr-hover-opacity"></i>
+          <i class="fa fa-instagram jvr-hover-opacity"></i>
+          <i class="fa fa-snapchat jvr-hover-opacity"></i>
+          <i class="fa fa-pinterest-p jvr-hover-opacity"></i>
+          <i class="fa fa-twitter jvr-hover-opacity"></i>
+          <i class="fa fa-linkedin jvr-hover-opacity"></i>
+        </div>
+        <p>2020 수민 현민 서연 윤제 소윤 호성 민제 예진</p>
+      </footer>
+
+      <script src="http://code.jquery.com/jquery-latest.min.js"></script> 
+      <script src="js/jvr_index.js"></script>
+
+	 </body>
+	 </html>
+      
